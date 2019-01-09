@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Spring Boot - AJAX POST GET Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="/js/getrequest.js"></script>
+	<script src="/js/postrequest.js"></script>
+	<style>
+	.hidden{
+		display:none !important;
+	}
+	</style>
+</head>
+
+<body> 
+<div class="container"> 
+<div class="col-sm-4">
+	<h3>Counter</h3>
+	<div id>		
+		<form id="customerForm" class="hidden">
+		  <div class="form-group">
+			<label for="firstname">FirstName:</label>
+			<input type="text" class="form-control" id="firstname" placeholder="Enter FirstName"/>
+		  </div>
+		  <div class="form-group">
+			<label for="lastname">LastName:</label>
+			<input type="text" class="form-control" id="lastname" placeholder="Enter LastName"/>
+		  </div>
+		  <button type="submit" class="btn btn-default">Submit</button>
+		</form>
+	</div>
+	<div id="postResultDiv">
+	</div>
+	<br>
+	<div>
+		<button id="allCustomers" type="button" class="btn btn-default hidden">Customers</button>
+		<div id="getResultDiv">
+	        <ul class="list-group">
+	    	</ul>
+    	</div>
+	</div>
+
+
+		<br>
+	<div>
+		<button id="allQeues" type="button" class="btn btn-default">Qeues</button>
+		<div id="getQeueResultDiv">
+	        <ul class="list-group">
+	    	</ul>
+    	</div>
+	</div>
+
+	
+</div>	
+</div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCjOFSbfltc4dX0PaV5VSwc8JX9JfwwPps",
+    authDomain: "queueingappv1.firebaseapp.com",
+    databaseURL: "https://queueingappv1.firebaseio.com",
+    projectId: "queueingappv1",
+    storageBucket: "queueingappv1.appspot.com",
+    messagingSenderId: "842165875664"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+</html>

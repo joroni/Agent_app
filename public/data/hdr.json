@@ -1,0 +1,42 @@
+﻿[
+	{
+		"QUEUE_CODE": "Q000001",
+		"BRANCH_CODE": "PBCOM001",
+		"QUEUE_NO": "E01",
+		"TYPE": "SINGLE",
+		"SCHED_DATE": "08-01-19",
+		"SCHED_TIME": "10:00",
+		"STATUS": "PENDING",
+		"SOURCE": "ONLINE"
+	},
+	{
+		"QUEUE_CODE": "Q000002",
+		"BRANCH_CODE": "PBCOM002",
+		"QUEUE_NO": "E02",
+		"TYPE": "MULTIPLE",
+		"SCHED_DATE": "10-01-19",
+		"SCHED_TIME": "14:45",
+		"STATUS": "PENDING",
+		"SOURCE": "WALKIN"
+	},
+	{
+		"QUEUE_CODE": "",
+		"BRANCH_CODE": "",
+		"QUEUE_NO": "",
+		"TYPE": "",
+		"SCHED_DATE": "",
+		"SCHED_TIME": "",
+		"STATUS": "",
+		"SOURCE": ""
+	},
+	{
+		"QUEUE_CODE": "",
+		"BRANCH_CODE": "",
+		"QUEUE_NO": "",
+		"TYPE": "",
+		"SCHED_DATE": "",
+		"SCHED_TIME": "",
+		"STATUS": "",
+		"SOURCE": ""
+	}
+]
